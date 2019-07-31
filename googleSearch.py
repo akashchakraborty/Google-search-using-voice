@@ -1,6 +1,6 @@
 import sys
 from googlesearch import search 
-import speech_recognition as sr
+import speech_recognition as sr # make sure you have pyaudio installed
 import pyttsx3
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
@@ -29,7 +29,7 @@ def takeCommand():
 	return query
 
 def greet():
-    
+    #https://github.com/akashchakraborty/Google-search-using-voice/edit/master/googleSearch.py
     speak("Hey  There...       What is your name?")
     name = takeCommand().lower()
     speak("Hi " + name + " I    am    your   personal   search   engine   powered   by   google")
